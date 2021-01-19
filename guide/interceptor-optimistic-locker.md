@@ -11,6 +11,16 @@
 
 ### 使用方法
 
+springboot
+
+```java
+//注册乐观锁插件
+    @Bean
+    public OptimisticLockerInnerInterceptor optimisticLockerInnerInterceptor() {
+        return new OptimisticLockerInnerInterceptor();
+    }
+```
+
 字段上加上`@Version`注解
 
 ``` java
